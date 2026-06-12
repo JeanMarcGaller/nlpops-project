@@ -1,0 +1,9 @@
+global:
+  # Fast updates during load tests.
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: nlpops-classifier
+    # Uses /metrics; Docker service name as host.
+    static_configs:
+      -
