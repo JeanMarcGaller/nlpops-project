@@ -6,4 +6,4 @@ scrape_configs:
   - job_name: nlpops-classifier
     # Uses /metrics; Docker service name as host.
     static_configs:
-      -
+      - targets: ['classifier-service:8000']
